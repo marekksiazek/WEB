@@ -1,0 +1,46 @@
+.main_left {
+    background-color: #e6f5f6;
+    margin: 2rem;
+    padding: 5rem;
+    border-radius: 20% 20%;
+}
+
+.main_left  h1 {
+    color: #0097a9;
+    text-transform: uppercase;
+    text-align: start;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-left: 1rem;
+}
+
+.main_left p {
+    line-height: 2rem;
+    color: #0097a9;
+    font-size: 1.2rem;
+
+}
+
+.main_right {
+    background-color: #e6f5f6;
+    margin: 2rem;
+    margin-top: 5rem;
+    padding: 5rem;
+    border-radius: 20% 20%;
+}
+
+.main_right  h1 {
+    color: #0097a9;
+    text-align: end;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-right: auto;
+}
+
+.main_right p {
+    line-height: 2rem;
+    color: #0097a9;
+    font-size: 1.2rem;
+
+}

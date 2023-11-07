@@ -1,0 +1,253 @@
+.modal {
+    display: none;
+}
+
+.modal_backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal_body {
+    position: fixed;
+    top: 3rem;
+    bottom: 3rem;
+    right: 20%;
+    left: 20%;
+    padding: 2rem 3rem;
+    background-color: #e6f5f6;
+    overflow: auto;
+}
+
+.modal_close {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+    padding: 0.3rem;
+    cursor: pointer;
+    font-size: 2rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    text-indent: 10rem;
+    overflow: hidden;
+    border: 0;
+    background-color: transparent;
+    color: #db3eb1;
+}
+
+.modal_close::after {
+    position: absolute;
+    line-height: 0.5;
+    top: 0.2rem;
+    left: 0.1rem;
+    text-indent: 0;
+    content: "\00D7";
+}
+
+.modal_body h1 {
+    color: #0097a9;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.flex_wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr) / auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.img_wrap {
+    grid-area: 2 / 1 / 3 / 2;
+    place-self: center;
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+.logo_register {
+    max-height: 100%;
+    max-width: 80%;
+}
+
+.form_wrap {
+    grid-area: 1 / 1 / 2 / 3;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+.price_wrap {
+    grid-area: 2 / 2 / 3 / 3;
+    text-align: center;
+    align-self: center;
+}
+
+.text_wrap{
+    float: left;
+    padding-top: 3rem;
+    padding-left: 3.5rem;
+}
+
+
+.input_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.form {
+    background-color: rgba(219, 62, 177, 1);
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 90%;
+}
+  
+.title {
+    display: block;
+    color: #e6f5f6;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+  
+.subtitle {
+    display: block;
+    color: #e6f5f6;
+    font-family: sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.logo_register_small {
+    height: 15vh;
+    padding-left: 12rem;
+    margin-bottom: 0;
+}
+  
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 40%;
+}
+  
+.ic1 {
+    margin-top: 2rem;
+}
+  
+.ic2 {
+    margin-top: 2rem;
+}
+  
+.input {
+    background-color: #e6f5f6;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #0097a9;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+  
+.cut {
+    background-color: rgba(219, 62, 177, 1);
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 50%;
+}
+  
+.cut-short {
+    width: 50%;
+}
+  
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+}
+  
+.placeholder {
+    color: #0097a9;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+  
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+  
+.input:not(:placeholder-shown) ~ .placeholder {
+    color: #0097a9;
+}
+  
+.input:focus ~ .placeholder {
+    color: #e6f5f6;
+}
+  
+.submit {
+    background: #0097a9;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #e6f5f6;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+}
+  
+.submit:active {
+    background-color: #06b;
+}
+
+.cost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0.7;
+}
+
+.cost > span {
+    margin-top: 0;
+}
+
+.cost_currency {
+    font-size: 2rem;
+}
+
+.cost_zloty {
+    font-size: 4rem;
+}
+
+.cost_grosze {
+    font-size: 1.5rem;
+    align-self: flex-start;
+}
+  
+  
