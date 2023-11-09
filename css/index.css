@@ -163,7 +163,7 @@ body {
 .photo_background_childrens img {
     max-height: 90%;
     max-width: 90%;
-    transform: rotate(-10deg);
+/*     transform: rotate(-10deg); */
     border-radius: 1rem;
 }
 
@@ -181,7 +181,7 @@ body {
 .photo_background_women img {
     max-height: 90%;
     max-width: 90%;
-    transform: rotate(10deg);
+/*     transform: rotate(10deg); */
     border-radius: 1rem;
 }
 
