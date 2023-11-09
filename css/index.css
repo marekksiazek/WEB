@@ -164,7 +164,7 @@ body {
     max-height: 90%;
     max-width: 90%;
     border-radius: 1rem;
-    transform: rotate(5deg);
+    transform: rotate(-5deg);
 }
 
 .photo_background_women {
